@@ -1,0 +1,19 @@
+{
+  "name": "Wishlist",
+  "description": "The free Wishlist kanban board web app",
+  "repository": "https://github.com/jackmawer/wishlist",
+  "logo": "https://mawersoft.co.uk/img/Mawersoftlogo.png",
+  "keywords": ["kanban", "wishlist", "tool", "free"],
+  "website": "http://mawersoft.co.uk",
+  "env": {
+    "BUILDPACK_URL": "https://github.com/AdmitHub/meteor-buildpack-horse.git",
+    "ROOT_URL": {
+      "description": "IMPORTANT! Please replace <App Name> with the value provided on the top. This will be the full URL of your Wishlist app.",
+      "value": "https://<App Name>.herokuapp.com"
+    }
+  },
+  "addons": [
+    "mongolab",
+    "logentries"
+  ]
+}

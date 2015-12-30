@@ -1,0 +1,8 @@
+{
+  "name": "wishlist",
+  "description": "The free Wishlist kanban board web app",
+  "repository": "https://github.com/jackmawer/wishlist/",
+  "logo": "http://mawersoft.co.uk/img/Mawersoftlogo.png",
+  "website": "https://mawersoft.co.uk",
+  "addons": ["scalingo-mongodb"]
+}

@@ -1,0 +1,16 @@
+# Run with `docker-compose up -d`
+# XXX We should activate MongoDB oplog for better performance.
+wekan:
+  image: mquandalle/wekan
+  links:
+    - wishdb
+  environment:
+    - MONGO_URL=mongodb://wishdb/wish
+    - ROOT_URL=http://localhost:80
+  ports:
+    - 80:80
+
+wishdb:
+   image: mongo
+   ports:
+     - 27017
